@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>MiDex</title>
+</head>
+
+<body>
+    <div id="pokedex">
+
+        <div class="dex">
+
+            <form class="containerIn" action="">
+                <input class="buscar" type="text" placeholder="Ingrese Pokémon">
+            </form>
+
+            <div id="pokeData">
+                <div class="pokeImg"></div>
+            </div>
+
+            <div class="optionBtn">
+                <div class="btnColor">
+                    <button class="btnReset">reset</button>
+                    <button class="btnBack btnOpt">Back</button>
+                    <button class="btnShiny btnOpt">Shiny</button>
+                    <button class="btnFemale btnOpt">Female</button>
+                </div>
+
+                <div class="btnColor2">
+                    <button class="next">+</button>
+                    <button class="prev">-</button>
+                </div>
+            </div>
+
+            <div class="containerData">
+                <p class="loading">Esperando pokémon...</p>
+                <p class="pokeNumber"></p>
+                <p class="pokeType"></p>
+                <p class="pokeMove"></p>
+            </div>
+            
+        </div>
+
+        <div class="dex">
+
+            <div>
+                
+            </div>
+
+            <div class="containerStats">
+                <p class="stats"></p>
+            </div>
+
+            <div>
+                
+            </div>
+
+            
+
+        </div>
+
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
