@@ -7,7 +7,8 @@
 #pokedex{
     display: flex;
     justify-content: center;
-    background-color: black;
+    background-image: url(../img/backBody.jpg);
+    background-size: cover;
     height: 100vh;
 }
 
@@ -43,7 +44,7 @@
     height: 40%;
     border-radius: 3px;
     border-bottom-left-radius: 20px;
-    margin-bottom: 30%;
+    margin-bottom: 5%;
     color: black;
     background-image: linear-gradient(to top, #4483f8, #26ccd8); 
     border: 30px solid white;
@@ -51,20 +52,18 @@
 }
 
 .containerData{
-    width: 23%;
+    width: 80%;
     background-image: linear-gradient(to bottom, #4483f8, #26ccd8); 
     border: 3px solid black;
     line-height: 150%;
-    position: absolute;
-    bottom: 15%;
-    height: 15vh;
+    height: 8rem;
     padding: 5px;
+    margin-bottom: 3rem;
 }
 
 .containerData p {
-    width: 100%;
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 10px;
 }
 
 .containerStats{
@@ -88,48 +87,87 @@ img {
     width: 100%;
     padding: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     position: relative;
-    bottom: 20%;
+    bottom: 10%;
+    gap: 30px;
+}
+
+.btnColor{
+    display: flex;
+    justify-content: space-around;
 }
 
 .btnColor2 {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    justify-content: space-evenly;
     position: relative;
-    bottom: 12px;
 }
 
 .btnColor2 button {
     background-color: cornflowerblue;
     color: white;
-    padding: 5px;
-}
-
-.btnReset {
-    font-size: 7px;
-    border-radius: 10px;
-    padding: 5px;
-}
+    padding: 15px;
+}   
 
 .btnOpt {
     font-size: 10px;
     background-color: gold;
-    padding: 5px;
+    padding: 15px;
     border-radius: 10px;
     
 }
 
 .containerStats{
-    font-size: 13px;
-    padding: 5px;
+    height: 38%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    padding: 10px;
     width: 80%;
-    height: 20vh;
-    line-height: 1.5;
+    line-height: 3;
+    margin-bottom: 15%;
 }
 
 .containerStats h3 {
     display: flex;
     justify-content: center;
+}
+
+.containerTitle {
+    background-image: linear-gradient(to right, rgb(224, 80, 181), #4852db, rgb(255, 166, 0));
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: yellow;
+}
+
+.containerGame{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+    padding: 8px;
+    border: 2px solid black;
+    background-color: greenyellow;
+    width: 92%;
+    height: 2.2rem;
+    font-size: 0.8rem;
+}
+
+.toastMod {
+    background: linear-gradient(to right, rgb(233, 44, 192), rgb(230, 8, 182), rgb(75, 72, 221));
+    color: white;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.toastModName {
+    background: linear-gradient(to right, rgb(241, 245, 6), rgb(245, 209, 6), rgb(230, 8, 182));
+    color: black;
+    border-radius: 10px;
+    border: 2px solid black;
 }

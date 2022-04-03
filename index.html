@@ -7,40 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./Css/style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
     <title>MiDex</title>
 </head>
 
 <body>
+    <div class="containerTitle">
+        <h1>Pokedex</h1>
+    </div>
+    
+
     <div id="pokedex">
 
         <div class="dex">
 
             <form class="containerIn" action="">
-                <input class="buscar" type="text" placeholder="Ingrese Pokémon">
+                <input class="buscar" type="text" placeholder="ID or name Pokémon">
             </form>
 
             <div id="pokeData">
                 <div class="pokeImg"></div>
             </div>
 
-            <div class="optionBtn">
-                <div class="btnColor">
-                    <button class="btnReset">reset</button>
-                    <button class="btnBack btnOpt">Back</button>
-                    <button class="btnShiny btnOpt">Shiny</button>
-                    <button class="btnFemale btnOpt">Female</button>
-                </div>
-
-                <div class="btnColor2">
-                    <button class="next">+</button>
-                    <button class="prev">-</button>
-                </div>
-            </div>
-
             <div class="containerData">
-                <p class="loading">Esperando pokémon...</p>
+                <p class="loading">Waiting for input...</p>
                 <p class="pokeNumber"></p>
                 <p class="pokeType"></p>
                 <p class="pokeMove"></p>
@@ -50,26 +43,32 @@
 
         <div class="dex">
 
-            <div>
-                
+            <div class="containerGame">
+                <p class="gameData"></p>
             </div>
 
             <div class="containerStats">
                 <p class="stats"></p>
             </div>
 
-            <div>
-                
+            <div class="optionBtn">
+                <div class="btnColor">
+                    <button class="btnMale btnOpt">Male</button>
+                    <button class="btnFemale btnOpt">Female</button>
+                    <button class="btnBack btnOpt">Back</button>
+                    <button class="btnShiny btnOpt">Shiny</button>
+                </div>
+
+                <div class="btnColor2">
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
             </div>
-
-            
-
         </div>
-
     </div>
 
-
     <script src="./main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
